@@ -1,0 +1,62 @@
+<div class="container">
+    <div class="row animated" align="center">
+
+        <h2 class="fadeIn animated">
+            {{tituloCancion}}
+            <div id="sonidosAct" class="col-md-12"></div>
+        </h2>
+
+    </div>
+    <div class="row">
+        <div class="col" align="center">
+            <h2>Sonidos de Animales</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" align="center">
+                <div class="col-sm-6" align="center"><img src="https://cdn.pixabay.com/photo/2017/07/12/03/40/frog-2495715_960_720.png" alt="imgRana" width="125" height="125"></div>
+
+                <div *ngIf="!sonidoOn" class="col-sm-6 row">
+                    <button type="button" (click)="detectSonido('brr')" class="btn btn-primary mt-1">brr</button>
+                    <button type="button" (click)="detectSonido('birip')" class="btn btn-primary mt-1">birip</button>
+                    <button type="button" (click)="detectSonido('brrah')" class="btn btn-primary mt-1">brrah</button>
+                    <button type="button" (click)="detectSonido('croac')" class="btn btn-primary mt-1">croac</button>
+                </div>
+
+                <div *ngIf="sonidoOn" class="col-sm-6 row">
+                    <button type="button" class="btn btn-secondary mt-1">brr</button>
+                    <button type="button" class="btn btn-secondary mt-1">birip</button>
+                    <button type="button" class="btn btn-secondary mt-1">brrah</button>
+                    <button type="button" class="btn btn-secondary mt-1">croac</button>
+                </div>
+            </div>
+            <div class="col-sm-4" align="center">
+                <div class="col-sm-6" align="center"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/4242/blue-damselfly-clipart-md.png" alt="imgLibelula" width="125" height="125"></div>
+                <div *ngIf="!sonidoOn" class="col-sm-6 row">
+                    <button type="button" (click)="detectSonido('fiu')" class="btn btn-success mt-1">fiu</button>
+                    <button type="button" (click)="detectSonido('plop')" class="btn btn-success mt-1">plop</button>
+                    <button type="button" (click)="detectSonido('pep')" class="btn btn-success mt-1">pep</button>
+                </div>
+
+                <div *ngIf="sonidoOn" class="col-sm-6 row">
+                    <button type="button" class="btn btn-secondary mt-1">fiu</button>
+                    <button type="button" class="btn btn-secondary mt-1">plop</button>
+                    <button type="button" class="btn btn-secondary mt-1">pep</button>
+                </div>
+            </div>
+            <div class="col-sm-4" align="center">
+                <div class="col-sm-6" align="center"><img src="https://crickex.com.mx/wp-content/uploads/2019/11/Grillo-derecha.png" alt="imgGrillo" width="125" height="125"></div>
+                <div *ngIf="!sonidoOn" class="col-sm-6 row">
+                    <button type="button" (click)="detectSonido('cric-cric')" class="btn btn-danger mt-1">cric-cric</button>
+                    <button type="button" (click)="detectSonido('trri-trri')" class="btn btn-danger mt-1">trri-trri</button>
+                    <button type="button" (click)="detectSonido('bri-bri')" class="btn btn-danger mt-1">bri-bri</button>
+                </div>
+
+                <div *ngIf="sonidoOn" class="col-sm-6 row">
+                    <button type="button" class="btn btn-secondary mt-1">cric-cric</button>
+                    <button type="button" class="btn btn-secondary mt-1">trri-trri</button>
+                    <button type="button" class="btn btn-secondary mt-1">bri-bri</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

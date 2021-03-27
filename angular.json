@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pruebaLizbeth"
+    }
+  },
+  "defaultProject": "pruebaLizbeth",
+  "cli": {
+    "analytics": "898fef61-427d-4f12-a8b0-6b260d6c6c2f"
+  }
 }
